@@ -21,7 +21,7 @@ article ul {list-style: none;}
 article p, article li {line-height: 2;}
 article sup {font-weight: 700;}
 article .notes {font-size: .875em;}
-blockquote {font-family:"Kaiti";}
+blockquote {font-family:"Kaiti","Kai";}
 blockquote ul,blockquote ol {list-style-position:inside;}
 .introduction {position: relative;}
 .introduction .avatar {margin:0 0 2em 2em;border:1px solid #ccc;padding:2px;display:inline-block;}
