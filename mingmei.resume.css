@@ -51,6 +51,18 @@ footer {font-size:.75em;margin:3em 0 2em;text-align: center;}
 .explanation {padding:20px;border:1px solid #ddd;}
 .explanation ul {list-style: disc;}
 
+.description {position: relative;}
+.description::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid #ccc;
+  left: -71px;
+  transform: scaleX(.5);
+  transform-origin: 0 50%;
+}
+
 @media only screen and (max-width:768px) {
   article ul, article ol {margin:0;list-style-position:inside;}
 	.page {margin:0;width:auto;padding:2em 1em;}
@@ -59,6 +71,7 @@ footer {font-size:.75em;margin:3em 0 2em;text-align: center;}
   .introduction .fn {font-size:24px;}
   .introduction .avatar .pic {width:64px;height:64px;/*-webkit-background-size:cover!important;
   background-size:cover!important;*/}
+  .description::after {display: none;}
 }
 @media only screen and (max-width:320px) and (-webkit-min-device-pixel-ratio:1.5) and (min-resolution:2dppx){
   .actions {display:none;}
@@ -84,6 +97,7 @@ footer {font-size:.75em;margin:3em 0 2em;text-align: center;}
   .experience {margin-top:2em;}
   .description li {line-height: 1.5;margin:.5em 0 0;}
   .explanation {border-color:#000;}
+  .description::after {display: none;}
   /*.contact li {display: inline-block;width: 30%;}
   .contact li:first-child {width:50px;}*/
 }
