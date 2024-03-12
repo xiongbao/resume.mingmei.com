@@ -3,7 +3,6 @@ html {overflow: auto;}
 body {font-family:'Open Sans','Helvetica Neue','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;color:#383838;background: #f6f6f6;}
 u {border-bottom: 1px solid;text-decoration: none;padding-bottom: .05em;}
 a {color:#0645AD;text-decoration:none;}
-a[rel="external"]:after {display: inline-block;width:10px;height:10px;margin-left:2px;vertical-align:2px;content:"";background-image:url(img/external.png);}
 u {
   border-bottom: 1px solid;
   text-decoration: none;
@@ -40,12 +39,9 @@ user-select:none;}
 .job .dates {position:absolute;left:0;top:4px;font-size:12px;color:#999;}
 footer {font-size:.75em;margin:3em 0 2em;text-align: center;}
 .copyright {color:#999;margin:0 0 .5em;}
-.actions {position:absolute;right:10px;top:85px;}
-.actions a {color:#555;}
-.actions .print {margin-right:20px;}
+.actions {position:absolute;right:10px;top:85px;display: flex;gap: 20px;}
+.actions a {color:#555;display:flex;gap:4px;align-items: center;}
 .actions .ico {display:inline-block;width:16px;height:16px;vertical-align:text-bottom;margin-right:3px;}
-.actions .print .ico {background-image:url(img/print.png);}
-.actions .down .ico {background-image:url(img/download.png);}
 .actions img {width:16px;}
 
 .explanation {padding:20px;border:1px solid #ddd;}
@@ -87,6 +83,7 @@ footer {font-size:.75em;margin:3em 0 2em;text-align: center;}
   .page {padding:2em 0 0;}
   .page .fn {font-size:64px;float:left;display: block;margin:0 30px 0 0;line-height: 125%;}
   .page .fn u {border:0 none;}
+  .page a svg,
   .page a[rel="external"]:after {display:none;}
   .page dot {display: none;}
   .page .job {padding-left: 0;margin:1em 0;}
