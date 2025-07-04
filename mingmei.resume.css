@@ -77,7 +77,7 @@ footer {font-size:.75em;margin:3em 0 2em;text-align: center;}
   blockquote {margin:3em 0 0;}
   blockquote p {line-height: 1.5;margin:.5em 0 0;}
   footer {display:none;}
-  .live-city {display:none;}
+  .print-hide, .born-city, .live-city {display:none;}
   .introduction .avatar {position: absolute;right:0;top:0;margin:0;width:100px;height:128px;overflow: hidden;border:0 none;}
   .introduction .avatar .pic {position: absolute;left:50%;margin-left:-64px;top:0;}
   .page {padding:2em 0 0;}
